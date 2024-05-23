@@ -1,5 +1,14 @@
 # InstaTURNO--Grupo4--DS-IA
-El proyecto consiste en desarrollar un sistema de gestion de turnos Médicos.
+
+Descripción del Proyecto
+
+El proyecto consiste en un sistema de gestión de turnos médicos que permitirá a los pacientes solicitar y gestionar turnos de manera eficiente. Las funcionalidades principales que incluye el sistema son:
+
+- Solicitar un turno.
+- Consultar el estado del turno.
+- Cancelar un turno.
+- Administrar los turnos (solo para empleados).
+- Registro y gestión de médicos.
 
 Integrantes:
 
