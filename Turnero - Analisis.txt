@@ -1,28 +1,25 @@
-# Nuestro proyecto consiste en un SISTEMA DE GESTIÓN DE TURNOS (pensado para una institución Médica)
-#
-#
-# De esta manera, se pensó que el menú de interfaz del usuario refleje las operaciones de un CRUD para poder operar.
-# Desde el inicio, definimos unas cuantas constantes (Especialidades médicas) para que el programa pueda correr (en su demo),
-# pero en el despliegue final no serán necesarias ya que se obtendra la información directamente de la Base de Datos.
-#
-# El sistema inicia presentando al usuario de manera clara las opciones que el usuario puede ejecutar y alamacena su elección
-# (variable 'user_a') para proceder.
-#
-# En caso de seleccionar CREAR, al usuario se le da la opción de elegir entre una serie de Especialidades para almacenar su opción
-# y se generá una ID (en esta demo es un número aleatorio, pero una vez integrada la BD esto se realizará con un Auto Incremental).
-#
-# En caso de seleccionar CONSULTAR, el usuario deberá ingresar el ID entregado anteriormente y el sistema le avisa sobre la especialidad
-# en la que creo el turno.
-#
-# En esta version 'demo' del sistema, fusionamos la opción de ACTUALIZAR con ELIMINAR para mantener la presentación simple. Pero una
-# vez en su versión final, se podrá actualizar el día del turno y la opción de borrar será una opción por si misma.
-#
-# Al finalizar, el sistema consulta al usuario si desea proceder con otra acción (almacena su elección en una VARIABLE) y
-# corre un BUCLE que vuelve a presentar el menú principal al usuario.
-#
-# Si el usuario desde un principio decide que no quiere ejecutar ninguna opción y decide salir del sistema, su selección se almacena
-# en la misma variable que le permite al sistema escapar al BUCLE y terminar el proceso.
-#
-# En nuestra primera presentación, utilizamos 2 VARIABLES para almacenar datos personales del usuario (APELLIDO y DNI) que se utilizaran
-# para crear y modificar los turnos.
-#
+Nuestro proyecto consiste en un SISTEMA DE GESTIÓN DE TURNOS para una institución médica.
+
+Interfaz de Usuario:
+La interfaz de usuario muestra un conjunto de opciones para operar con los turnos, utilizando las operaciones de un CRUD (Crear, Leer, Actualizar, Eliminar).
+Al iniciar, el sistema presenta las opciones al usuario y almacena su elección.
+
+Creación de Turnos:
+El usuario elige una especialidad médica para generar un ID de turno.
+En la versión final, la información se obtendrá directamente de una Base de Datos.
+
+Consulta de Turnos:
+El usuario ingresa el ID del turno para consultar la especialidad asociada.
+
+Actualización y Eliminación de Turnos:
+La opción de actualización se combina con la eliminación en la versión demo.
+En la versión final, la actualización y la eliminación serán independientes.
+
+Finalización y Continuación:
+Después de cada acción, el sistema pregunta al usuario si desea continuar.
+Un bucle permite volver al menú principal hasta que el usuario decida salir.
+
+Salida del Sistema:
+Si el usuario decide salir al principio, su selección termina el proceso.
+
+Además, el código hace uso de variables para almacenar datos personales del usuario, como el apellido y el DNI, para la gestión de turnos.
