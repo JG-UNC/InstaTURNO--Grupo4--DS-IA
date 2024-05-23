@@ -13,7 +13,7 @@ El proyecto consiste en un sistema de gestión de turnos médicos que permitirá
 Integrantes:
 
 MAIA MAJZUM
-https://github.com/maiamajzum
+https://github.com/maiamajzum/ISPC2024
 maiamjzum@gmail.com
 34889057
 
