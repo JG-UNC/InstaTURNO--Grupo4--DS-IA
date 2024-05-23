@@ -1,5 +1,5 @@
 # InstaTURNO--Grupo4--DS-IA
-Sistema de Gestión de Turnos Médicos
+El proyecto consiste en desarrollar un sistema de gestion de turnos Médicos.
 
 MAIA MAJZUM
 https://github.com/maiamajzum
