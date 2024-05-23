@@ -1,12 +1,12 @@
 Algoritmo MENU_INICIO
-	E1 <- 'Oftalmología'
+	E1 <- 'OftalmologÃ­a'
 	E2 <- 'Laboratorio'
-	E3 <- 'Traumatología'
-	E4 <- 'Psicología'
+	E3 <- 'TraumatologÃ­a'
+	E4 <- 'PsicologÃ­a'
 	user_turn <- 'none'
-	Escribir '- Bienvenido al Sistema de Gestión de Turnos -'
+	Escribir '- Bienvenido al Sistema de GestiÃ³n de Turnos -'
 	Repetir
-		Escribir 'Para continuar seleccionar una opción:'
+		Escribir 'Para continuar seleccionar una opciÃ³n:'
 		Escribir '1. Crear Turno.'
 		Escribir '2. Consultar Turno.'
 		Escribir '3. Modificar Turno.'
@@ -17,15 +17,15 @@ Algoritmo MENU_INICIO
 			Leer user_a
 			Escribir 'Ingrese su DNI:'
 			Leer user_dni
-			Según user_opt Hacer
+			SegÃºn user_opt Hacer
 				1:
-					Escribir 'Para CREAR un turno, seleccione un departamento médico:'
-					Escribir '1. Oftalmología'
+					Escribir 'Para CREAR un turno, seleccione un departamento mÃ©dico:'
+					Escribir '1. OftalmologÃ­a'
 					Escribir '2. Laboratorio'
-					Escribir '3. Traumatología'
-					Escribir '4. Psicología'
+					Escribir '3. TraumatologÃ­a'
+					Escribir '4. PsicologÃ­a'
 					Leer f
-					Según f Hacer
+					SegÃºn f Hacer
 						1:
 							user_turn <- E1
 						2:
@@ -34,14 +34,14 @@ Algoritmo MENU_INICIO
 							user_turn <- E3
 						4:
 							user_turn <- E4
-					FinSegún
+					FinSegÃºn
 					c <- azar(100)+1000
 					Si user_turn='error' Entonces
 						Escribir 'Departamento NO encontrado.'
 					SiNo
-						Escribir 'Usted seleccionó ', user_turn, '.'
-						Escribir 'El código de su turno es: ', c, '.'
-						Escribir 'Reribirá un Email con la confirmación del horario.'
+						Escribir 'Usted seleccionÃ³ ', user_turn, '.'
+						Escribir 'El cÃ³digo de su turno es: ', c, '.'
+						Escribir 'ReribirÃ¡ un Email con la confirmaciÃ³n del horario.'
 					FinSi
 				2:
 					Si user_turn<>'none' Entonces
@@ -50,14 +50,14 @@ Algoritmo MENU_INICIO
 						Escribir 'El paciente ', user_a, ' NO tiene turno.'
 					FinSi
 				3:
-					Escribir 'Ingrese su código de turno:'
+					Escribir 'Ingrese su cÃ³digo de turno:'
 					Leer d
 					Si d=c Entonces
 						Escribir 'Su turno ', c, ' ha sido ELIMINADO.'
 					SiNo
 						Escribir 'Turno NO encontrado.'
 					FinSi
-			FinSegún
+			FinSegÃºn
 			Escribir 'Desea realizar otro tramite?'
 			Escribir '1. Si.'
 			Escribir '2. No'
