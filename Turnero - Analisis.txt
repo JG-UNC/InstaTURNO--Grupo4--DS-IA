@@ -22,4 +22,4 @@ Un bucle permite volver al menú principal hasta que el usuario decida salir.
 Salida del Sistema:
 Si el usuario decide salir al principio, su selección termina el proceso.
 
-Además, el código hace uso de variables para almacenar datos personales del usuario, como el apellido y el DNI, para la gestión de turnos.
+Además, el código hace uso de variables para almacenar datos personales del usuario, como el apellido y el DNI, para la gestión.
