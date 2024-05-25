@@ -1,89 +1,140 @@
-Algoritmo MENU_INICIO
-	E1 <- 'Cardiolog√≠a'
-	E2 <- 'Neurolog√≠a'
-	E3 <- 'Ginecolog√≠a'
-	E4 <- 'Pediatr√≠a'
-	E5 <- 'Oftalmolog√≠a'
-	E6 <- 'Laboratorio'
-	E7 <- 'Traumatolog√≠a'
-	E8 <- 'Psicolog√≠a'
-	user_turn <- 'none'
-	Escribir '- Bienvenido al Sistema de Gesti√≥n de Turnos -'
+Funcion menu_principal
+	
+	especialidad_1 <- 'CardiologÌa'
+	especialidad_2 <- 'NeurologÌa'
+	especialidad_3 <- 'GinecologÌa'
+	especialidad_4 <- 'PediatrÌa'
+	especialidad_5 <- 'OftalmologÌa'
+	especialidad_6 <- 'Laboratorio'
+	especialidad_7 <- 'TraumatologÌa'
+	especialidad_8 <- 'PsicologÌa'
+	turno_nuevo <- 'none'
+	apellido_paciente <- ''
+	dni_paciente <- ''
+	control_repetir <- 1
+	
+	Escribir '*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*'	
+	Escribir '*_*_*_*_*_ I N S T A T U R N O _*_*_*_*_*'
+	Escribir '*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*'	
+	Escribir ''
+	Escribir '- Bienvenido al Sistema de GestiÛn de Turnos -'
+		
 	Repetir
-		Escribir 'Para continuar seleccionar una opci√≥n:'
+		Escribir ''
+		Escribir '*_*_*_*_*_ Men˙ Principal _*_*_*_*_*'
+		Escribir ''
+		Escribir 'Para continuar seleccione una opciÛn. Ingrese el n˙mero de la opciÛn deseada.'
 		Escribir '1. Crear Turno.'
 		Escribir '2. Consultar Turno.'
-		Escribir '3. Modificar Turno.'
+		Escribir '3. Eliminar Turno.'
 		Escribir '0. Salir'
-		Leer user_opt
-		Si user_opt=1 O user_opt=2 O user_opt=3 Entonces
-			Escribir 'Ingrese su Apellido:'
-			Leer user_a
-			Escribir 'Ingrese su DNI:'
-			Leer user_dni
-			Seg√∫n user_opt Hacer
-				1:
-					Escribir 'Para CREAR un turno, seleccione un departamento m√©dico:'
-					Escribir '1. Cardiolog√≠a'
-					Escribir '2. Neurolog√≠a'
-					Escribir '3. Ginecolog√≠a'
-					Escribir '4. Pediatr√≠a'
-					Escribir '5. Oftalmolog√≠a'
-					Escribir '6. Laboratorio'
-					Escribir '7. Traumatolog√≠a'
-					Escribir '8. Psicolog√≠a'
-					Leer f
-					Seg√∫n f Hacer
-						1:
-							user_turn <- E1
-						2:
-							user_turn <- E2
-						3:
-							user_turn <- E3
-						4:
-							user_turn <- E4
-						5:
-							user_turn <- E5
-						6:
-							user_turn <- E6
-						7:
-							user_turn <- E7
-						8:
-							user_turn <- E8
-					FinSeg√∫n
-					c <- azar(100)+1000
-					Si user_turn='error' Entonces
-						Escribir 'Departamento NO encontrado.'
-					SiNo
-						Escribir 'Usted seleccion√≥ ', user_turn, '.'
-						Escribir 'El c√≥digo de su turno es: ', c, '.'
-						Escribir 'Reribir√° un Email con la confirmaci√≥n del horario.'
-					FinSi
-				2:
-					Si user_turn<>'none' Entonces
-						Escribir 'El paciente ', user_a, ' tiene turno en ', user_turn, '.'
-					SiNo
-						Escribir 'El paciente ', user_a, ' NO tiene turno.'
-					FinSi
-				3:
-					Escribir 'Ingrese su c√≥digo de turno:'
-					Leer d
-					Si d=c Entonces
-						Escribir 'Su turno ', c, ' ha sido ELIMINADO.'
-					SiNo
-						Escribir 'Turno NO encontrado.'
-					FinSi
-			FinSeg√∫n
-			Escribir 'Desea realizar otro tramite?'
-			Escribir '1. Si.'
-			Escribir '2. No'
-			Leer n
-			si n=2
-				Escribir 'Hasta luego.'
-			FinSi
-		SiNo
-			Escribir 'Hasta luego.'
-			h <- 0
+		Leer primera_opcion	
+		
+		Seg˙n primera_opcion Hacer
+			Caso 1:
+				Escribir ''
+				Escribir '*_*_*_*_*_ OpciÛn: Crear Turno _*_*_*_*_*'
+				
+				apellido_paciente <- Leer_Apellido_Paciente(primera_opcion)
+				dni_paciente <- Leer_Dni_Paciente(primera_opcion)
+				
+				Escribir 'Para crear un turno, seleccione un departamento mÈdico:'
+				Escribir '1. CardiologÌa'
+				Escribir '2. NeurologÌa'
+				Escribir '3. GinecologÌa'
+				Escribir '4. PediatrÌa'
+				Escribir '5. OftalmologÌa'
+				Escribir '6. Laboratorio'
+				Escribir '7. TraumatologÌa'
+				Escribir '8. PsicologÌa'
+				Leer especialidad_opcion
+				
+				Seg˙n especialidad_opcion Hacer
+					Caso 1:
+						turno_nuevo <- especialidad_1
+					Caso 2:
+						turno_nuevo <- especialidad_2
+					Caso 3:
+						turno_nuevo <- especialidad_3
+					Caso 4:
+						turno_nuevo <- especialidad_4
+					Caso 5:
+						turno_nuevo <- especialidad_5
+					Caso 6:
+						turno_nuevo <- especialidad_6
+					Caso 7:
+						turno_nuevo <- especialidad_7
+					Caso 8:
+						turno_nuevo <- especialidad_8
+				FinSeg˙n
+				
+				id_turno_nuevo <- azar(100)+1000
+				
+				Si turno_nuevo='error' Entonces
+					Escribir 'Departamento NO encontrado.'
+				SiNo
+					Escribir 'Usted seleccionÛ ', turno_nuevo, '.'
+					Escribir 'El cÛdigo de su turno es: ', id_turno_nuevo, '.'
+					Escribir 'Reribir· un Email con la confirmaciÛn del horario.'
+				FinSi
+			Caso 2:
+				Escribir ''
+				Escribir '*_*_*_*_*_ OpciÛn: Consultar Turno _*_*_*_*_*'
+				
+				apellido_paciente <- Leer_Apellido_Paciente(primera_opcion)
+				dni_paciente <- Leer_Dni_Paciente(primera_opcion)
+				
+				Si turno_nuevo<>'none' Entonces
+					Escribir 'El paciente ', apellido_paciente, ' tiene turno en ', turno_nuevo, '.'
+				SiNo
+					Escribir 'El paciente ', apellido_paciente, ' NO tiene turno.'
+				FinSi
+			Caso 3:
+				Escribir ''
+				Escribir '*_*_*_*_*_ OpciÛn: Eliminar Turno _*_*_*_*_*'
+				
+				apellido_paciente <- Leer_Apellido_Paciente(primera_opcion)
+				dni_paciente <- Leer_Dni_Paciente(primera_opcion)
+				
+				Escribir 'Ingrese su cÛdigo de turno:'
+				Leer id_turno_eliminar
+				
+				Si id_turno_eliminar=id_turno_nuevo Entonces
+					Escribir 'Su turno ', id_turno_nuevo, ' ha sido ELIMINADO.'
+				SiNo
+					Escribir 'Turno NO encontrado.'
+				FinSi
+			Otro:
+				Escribir 'El valor ingresado es inv·lido. Reintente nuevamente.'
+				control_repetir <- 1
+		FinSeg˙n
+		Escribir 'Desea realizar otro tramite? Ingrese el n˙mero de la opciÛn deseada.'
+		Escribir '1. Si.'
+		Escribir '2. No'
+		Leer control_repetir
+
+		Si control_repetir=2 Entonces
+			Escribir 'Hasta luego. Gracias por confiar en InstaTURNO.'
 		FinSi
-	Hasta Que h<>1
+	Hasta Que control_repetir <> 1
+FinFuncion
+
+Funcion apellido_paciente <- Leer_Apellido_Paciente(primera_opcion)
+	Si primera_opcion = 1 O primera_opcion = 2 O primera_opcion = 3 Entonces
+		Escribir 'Ingrese el Apellido del paciente:'
+		Leer apellido_paciente
+	FinSi
+FinFuncion
+
+Funcion dni_paciente <- Leer_Dni_Paciente(primera_opcion)
+	Si primera_opcion = 1 O primera_opcion = 2 O primera_opcion = 3 Entonces
+		Escribir 'Ingrese el DNI del paciente:'
+		Leer dni_paciente
+	FinSi
+FinFuncion
+
+Algoritmo InstaTurno
+	
+	menu_principal()
+	
 FinAlgoritmo
