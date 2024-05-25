@@ -1,3 +1,13 @@
-Links a los repositorios personales con la resolución de los ejercicios de Programación
+Links a los repositorios personales con la resolución de los ejercicios de Programación:
 
-Astorga De Giusti Matias: https://github.com/30matias30/Evidencia-de-Aprendizaje-2
+- Astorga De Giusti Matias: https://github.com/30matias30/Evidencia-de-Aprendizaje-2
+
+- Frites Debebenedetti, Marcos Gabriel: https://github.com/marcosgfrites/ISPC-TSCDIA_practice/tree/main/2024_semestre_01/programador/intro_programacion/solucionesPracticas
+
+- 
+
+- 
+
+- 
+
+- 
