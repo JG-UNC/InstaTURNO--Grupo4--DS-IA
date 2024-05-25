@@ -4,7 +4,7 @@ Links a los repositorios personales con la resolución de los ejercicios de Prog
 
 - Frites Debebenedetti, Marcos Gabriel: https://github.com/marcosgfrites/ISPC-TSCDIA_practice/tree/main/2024_semestre_01/programador/intro_programacion/solucionesPracticas
 
-- 
+- Majzum Maia: https://github.com/maiamajzum/ISPC2024/tree/main/solucionesPracticas
 
 - 
 
