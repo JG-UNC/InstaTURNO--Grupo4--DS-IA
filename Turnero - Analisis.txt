@@ -1,25 +1,24 @@
 Nuestro proyecto consiste en un SISTEMA DE GESTIÓN DE TURNOS para una institución médica.
 
 Interfaz de Usuario:
-La interfaz de usuario muestra un conjunto de opciones para operar con los turnos, utilizando las operaciones de un CRUD (Crear, Leer, Actualizar, Eliminar).
-Al iniciar, el sistema presenta las opciones al usuario y almacena su elección.
+La interfaz de usuario muestra un conjunto de opciones para operar con los turnos, utilizando las operaciones de un CRUD (Crear, Leer, Actualizar, Eliminar). Al iniciar, el sistema presenta las opciones al usuario y almacena su elección.
 
 Creación de Turnos:
-El usuario elige una especialidad médica para generar un ID de turno.
-En la versión final, la información se obtendrá directamente de una Base de Datos.
+El usuario elige una especialidad médica entre varias opciones y se genera un ID de turno. En la versión final, la información se obtendrá directamente de una Base de Datos.
 
 Consulta de Turnos:
-El usuario ingresa el ID del turno para consultar la especialidad asociada.
+El usuario ingresa el ID del turno para consultar la especialidad asociada y los detalles del turno.
 
-Actualización y Eliminación de Turnos:
-La opción de actualización se combina con la eliminación en la versión demo.
-En la versión final, la actualización y la eliminación serán independientes.
+Eliminación de Turnos:
+El usuario ingresa el ID del turno para eliminarlo. En la versión demo, esta opción también podría considerarse como una actualización simplificada. En la versión final, la actualización y la eliminación serán independientes.
 
 Finalización y Continuación:
-Después de cada acción, el sistema pregunta al usuario si desea continuar.
-Un bucle permite volver al menú principal hasta que el usuario decida salir.
+Después de cada acción, el sistema pregunta al usuario si desea continuar. Un bucle permite volver al menú principal hasta que el usuario decida salir.
 
 Salida del Sistema:
 Si el usuario decide salir al principio, su selección termina el proceso.
 
-Además, el código hace uso de variables para almacenar datos personales del usuario, como el apellido y el DNI, para la gestión de turnos.
+Almacenamiento de Datos:
+El código hace uso de variables para almacenar datos personales del usuario, como el apellido y el DNI, para la gestión de turnos. Además, los turnos se almacenan en una lista que incluye el ID del turno, el apellido del paciente, el DNI y la especialidad seleccionada.
+
+Este análisis refleja las funcionalidades implementadas en el código, incluyendo la creación, consulta y eliminación de turnos, así como el manejo de datos personales del usuario y el flujo de interacción del sistema.
