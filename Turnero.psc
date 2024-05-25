@@ -1,8 +1,12 @@
 Algoritmo MENU_INICIO
-	E1 <- 'Oftalmología'
-	E2 <- 'Laboratorio'
-	E3 <- 'Traumatología'
-	E4 <- 'Psicología'
+	E1 <- 'Cardiología'
+	E2 <- 'Neurología'
+	E3 <- 'Ginecología'
+	E4 <- 'Pediatría'
+	E5 <- 'Oftalmología'
+	E6 <- 'Laboratorio'
+	E7 <- 'Traumatología'
+	E8 <- 'Psicología'
 	user_turn <- 'none'
 	Escribir '- Bienvenido al Sistema de Gestión de Turnos -'
 	Repetir
@@ -20,10 +24,14 @@ Algoritmo MENU_INICIO
 			Según user_opt Hacer
 				1:
 					Escribir 'Para CREAR un turno, seleccione un departamento médico:'
-					Escribir '1. Oftalmología'
-					Escribir '2. Laboratorio'
-					Escribir '3. Traumatología'
-					Escribir '4. Psicología'
+					Escribir '1. Cardiología'
+					Escribir '2. Neurología'
+					Escribir '3. Ginecología'
+					Escribir '4. Pediatría'
+					Escribir '5. Oftalmología'
+					Escribir '6. Laboratorio'
+					Escribir '7. Traumatología'
+					Escribir '8. Psicología'
 					Leer f
 					Según f Hacer
 						1:
@@ -34,6 +42,14 @@ Algoritmo MENU_INICIO
 							user_turn <- E3
 						4:
 							user_turn <- E4
+						5:
+							user_turn <- E5
+						6:
+							user_turn <- E6
+						7:
+							user_turn <- E7
+						8:
+							user_turn <- E8
 					FinSegún
 					c <- azar(100)+1000
 					Si user_turn='error' Entonces
@@ -61,11 +77,13 @@ Algoritmo MENU_INICIO
 			Escribir 'Desea realizar otro tramite?'
 			Escribir '1. Si.'
 			Escribir '2. No'
-			Leer h
+			Leer n
+			si n=2
+				Escribir 'Hasta luego.'
+			FinSi
 		SiNo
 			Escribir 'Hasta luego.'
 			h <- 0
 		FinSi
 	Hasta Que h<>1
 FinAlgoritmo
-
