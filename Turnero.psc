@@ -1,13 +1,13 @@
 Algoritmo MENU_INICIO
 	
-    especialidad1 <- 'Cardiología'
-    especialidad2 <- 'Neurología'
-    especialidad3 <- 'Ginecología'
-    especialidad4 <- 'Pediatría'
-    especialidad5 <- 'Oftalmología'
+    especialidad1 <- 'CardiologÃ­a'
+    especialidad2 <- 'NeurologÃ­a'
+    especialidad3 <- 'GinecologÃ­a'
+    especialidad4 <- 'PediatrÃ­a'
+    especialidad5 <- 'OftalmologÃ­a'
     especialidad6 <- 'Laboratorio'
-    especialidad7 <- 'Traumatología'
-    especialidad8 <- 'Psicología'
+    especialidad7 <- 'TraumatologÃ­a'
+    especialidad8 <- 'PsicologÃ­a'
     ultimo_turno_especialidad_usuario <- 'none'
 	ultimo_turno_dni_usuario <- 'none'
 	ultimo_turno_apellido_usuario <- 'none'
@@ -15,10 +15,10 @@ Algoritmo MENU_INICIO
     control_bucle <- 1 // Inicializamos h en 1 para entrar al bucle
 	
     Escribir '- InstaTURNO -'
-    Escribir '- Bienvenido al Sistema de Gestión de Turnos -'
+    Escribir '- Bienvenido al Sistema de GestiÃ³n de Turnos -'
 	
     Repetir
-        Escribir 'Para continuar, ingrese el número de opción deseada:'
+        Escribir 'Para continuar, ingrese el nÃºmero de opciÃ³n deseada:'
         Escribir '1. Crear Turno.'
         Escribir '2. Consultar Turno.'
         Escribir '3. Cancelar Turno.'
@@ -35,22 +35,22 @@ Algoritmo MENU_INICIO
 			Leer dni_usuario_turno
 		FinSi
 		
-        Según opcion_usuario Hacer
-            Caso 1: // Código para crear el turno...
-                Escribir '- OPCIÓN: CREAR TURNO -'
-				Escribir 'Seleccione una especialidad, ingresando el número de la opción:'
-                Escribir '1. Cardiología'
-                Escribir '2. Neurología'
-                Escribir '3. Ginecología'
-                Escribir '4. Pediatría'
-                Escribir '5. Oftalmología'
+        SegÃºn opcion_usuario Hacer
+            Caso 1: // CÃ³digo para crear el turno...
+                Escribir '- OPCIÃ“N: CREAR TURNO -'
+				Escribir 'Seleccione una especialidad, ingresando el nÃºmero de la opciÃ³n:'
+                Escribir '1. CardiologÃ­a'
+                Escribir '2. NeurologÃ­a'
+                Escribir '3. GinecologÃ­a'
+                Escribir '4. PediatrÃ­a'
+                Escribir '5. OftalmologÃ­a'
                 Escribir '6. Laboratorio'
-                Escribir '7. Traumatología'
-                Escribir '8. Psicología'
+                Escribir '7. TraumatologÃ­a'
+                Escribir '8. PsicologÃ­a'
 				Escribir ''
                 Leer opcion_especialidad
 				
-                Según opcion_especialidad Hacer
+                SegÃºn opcion_especialidad Hacer
                     Caso 1:
                         ultimo_turno_especialidad_usuario <- especialidad1
                     Caso 2:
@@ -68,8 +68,8 @@ Algoritmo MENU_INICIO
                     Caso 8:
                         ultimo_turno_especialidad_usuario <- especialidad8
 					Otro:
-						Escribir 'Opción no válida. Por favor, reinténtelo nuevamente.'						
-                FinSegún
+						Escribir 'OpciÃ³n no vÃ¡lida. Por favor, reintÃ©ntelo nuevamente.'						
+                FinSegÃºn
 				
 				contador_id_turno <- azar(1000) + 1000
 				
@@ -78,13 +78,13 @@ Algoritmo MENU_INICIO
 				SiNo
 					turno <- [contador_id_turno, ultimo_turno_apellido_usuario, ultimo_turno_dni_usuario, ultimo_turno_especialidad_usuario]
 					agregar(listado_turnos, turno)
-					Escribir 'Usted seleccionó ', ultimo_turno_especialidad_usuario, '.'
-					Escribir 'El código de su turno es: ', contador_id_turno, '.'
-					Escribir 'Recibirá un Email con la confirmación del horario.'
+					Escribir 'Usted seleccionÃ³ ', ultimo_turno_especialidad_usuario, '.'
+					Escribir 'El cÃ³digo de su turno es: ', contador_id_turno, '.'
+					Escribir 'RecibirÃ¡ un Email con la confirmaciÃ³n del horario.'
 				FinSi
-            Caso 2: // Código para consultar turno...
-				Escribir '- OPCIÓN: CONSULTAR TURNO -'
-				Escribir 'Ingrese su código de turno:'
+            Caso 2: // CÃ³digo para consultar turno...
+				Escribir '- OPCIÃ“N: CONSULTAR TURNO -'
+				Escribir 'Ingrese su cÃ³digo de turno:'
 				Escribir ''
 				Leer contador_id_turno
 				encontrado <- Falso
@@ -97,15 +97,15 @@ Algoritmo MENU_INICIO
 				SiNo encontrado Entonces
 					Escribir 'Turno NO encontrado.'
 				FinSi
-			Caso 3: // Código para eliminar turno...
-				Escribir '- OPCIÓN: ELIMINAR TURNO -'				
-				Escribir 'Ingrese su código de turno:'
+			Caso 3: // CÃ³digo para eliminar turno...
+				Escribir '- OPCIÃ“N: ELIMINAR TURNO -'				
+				Escribir 'Ingrese su cÃ³digo de turno:'
 				Escribir ''
 				Leer contador_id_turno
 				encontrado <- Falso
 				
-                Escribir 'Está a punto de eliminar el turno ', contador_id_turno,'. Está seguro que desea continuar? Ingrese el número de opción.'
-				Escribir '1. Sí'
+                Escribir 'EstÃ¡ a punto de eliminar el turno ', contador_id_turno,'. EstÃ¡ seguro que desea continuar? Ingrese el nÃºmero de opciÃ³n.'
+				Escribir '1. SÃ­'
 				Escribir '2. No'
 				Escribir ''
 				
@@ -125,21 +125,21 @@ Algoritmo MENU_INICIO
 							Escribir 'Turno NO encontrado.'
 						FinSi
 					Caso 2:
-						Escribir 'Ha seleccionado no eliminar el último turno otorgado. Gracias.'
+						Escribir 'Ha seleccionado no eliminar el Ãºltimo turno otorgado. Gracias.'
 					Otro:
-						Escribir 'Opción no válida. Por favor, reinténtelo nuevamente.'						
+						Escribir 'OpciÃ³n no vÃ¡lida. Por favor, reintÃ©ntelo nuevamente.'						
 				FinSegun
             Caso 0:
                 Escribir 'Hasta luego.'
 				
                 control_bucle <- 0 // Salir del bucle
             Otro:
-                Escribir 'Opción no válida. Por favor, reinténtelo nuevamente.'
-        FinSegún
+                Escribir 'OpciÃ³n no vÃ¡lida. Por favor, reintÃ©ntelo nuevamente.'
+        FinSegÃºn
 		
         Si control_bucle <> 0 Entonces // Si no se ha elegido salir
-            Escribir 'Desea realizar otra acción? Ingrese el número de opción.'
-            Escribir '1. Sí'
+            Escribir 'Desea realizar otra acciÃ³n? Ingrese el nÃºmero de opciÃ³n.'
+            Escribir '1. SÃ­'
             Escribir '2. No '
 			Escribir ''
 			
@@ -149,5 +149,6 @@ Algoritmo MENU_INICIO
 	Hasta Que control_bucle = 0
     
 FinAlgoritmo
+
 
 
