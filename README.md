@@ -29,6 +29,6 @@ alcalde.research@gmail.com
 25246330
 
 ASTORGA DE GIUSTI MATIAS ALEJANDRO
-https://github.com/30matias30/Evidencia-de-Aprendizaje-2
+https://github.com/30matias30
 30matias30@gmail.com
 39610073
