@@ -69,4 +69,4 @@ Las principales funcionalidades que incluye son:
 - **PAREDES, JORGE EDUARDO**
     - _Usuario GitHub_: [GeorgiWalls](https://github.com/GeorgiWalls)
     - _Mail_: jorgeparedes0501@gmail.com
-    - _DNI_: XXXXXXXX
+    - _DNI_: 39448604 
