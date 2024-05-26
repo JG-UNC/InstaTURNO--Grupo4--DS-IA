@@ -6,7 +6,7 @@ Links a los repositorios personales con la resolución de los ejercicios de Prog
 
 - Majzum Maia: https://github.com/maiamajzum/ISPC2024/tree/main/solucionesPracticas
 
-- 
+- Guillén Jonathan Eduardo:  https://github.com/JG-UNC/solucionesPracticas
 
 - 
 
