@@ -7,18 +7,26 @@ Las principales funcionalidades que incluye son:
     - Reserva de turnos.
     - Consulta de turnos.
     - Actualización de turnos.
-- Gestión de Personal:
-    - Creación de profesionales de la salud.
-    - Consulta de profesionales de la salud.
-    - Actualización de profesionales de la salud.
 - Gestión de Especialidades:
     - Creación de especialidades médicas.
     - Consulta de especialidades médicas.
     - Actualización de especialidades médicas.
-- Gestión de Estudios:
-    - Creación de estudios médicos.
-    - Consulta de estudios médicos.
-    - Actualización de estudios médicos.
+- Gestión de Departamentos:
+    - Creación de departamentos de estudios médicos.
+    - Consulta de departamentos de estudios médicos.
+    - Actualización de departamentos de estudios médicos.
+- Gestión de Horarios:
+    - Creación de horarios de atención.
+    - Consulta de horarios de atención.
+    - Actualización de horarios de atención.
+- Gestión de Personal:
+    - Creación de profesionales de la salud.
+    - Consulta de profesionales de la salud.
+    - Actualización de profesionales de la salud.
+- Gestión de Pacientes:
+    - Creación de pacientes.
+    - Consulta de pacientes.
+    - Actualización de pacientes.
 - Gestión de Usuarios:
     - Creación de usuarios.
     - Consulta de usuarios.
@@ -69,4 +77,4 @@ Las principales funcionalidades que incluye son:
 - **PAREDES, JORGE EDUARDO**
     - _Usuario GitHub_: [GeorgiWalls](https://github.com/GeorgiWalls)
     - _Mail_: jorgeparedes0501@gmail.com
-    - _DNI_: XXXXXXXX
+    - _DNI_: 39448604 
